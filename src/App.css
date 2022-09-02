@@ -20,7 +20,6 @@ section:nth-child(2) {
 }
 
 section .content {
-    border: 1px solid white;
     margin: 50px auto;
     width: 80%;
 }
@@ -78,7 +77,7 @@ header {
     display: flex;
     justfiy-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 50px;
 }
 
 .nav-branding {
@@ -127,12 +126,12 @@ header {
 
     .nav-menu {
         position: fixed;
-        right: -100%;
-        top: 50px;
+        right: -110%;
+        top: 35px;
         gap: 0;
         flex-direction: column;
         background-color: #262626;
-        width: 70%;
+        width: 100%;
         text-align: center;
         transition: 0.3s;
     }

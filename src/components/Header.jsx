@@ -1,14 +1,23 @@
-import React from "react"
+import React, {useState} from "react"
 
 function Header() {
   
+  const [isActive, setIsActive] = useState(false)
+  
+  const onHamburger = () => {
+    setIsActive(current => !current)
+  }
+  
+  const showActiveClass = () => {
+    return isActive ? "active" : null
+  }
   
   return (
       <header className="border">
         <nav className="navbar">
           <a href="#cory" className="nav-branding">Cory</a>
           
-          <ul className="nav-menu">
+          <ul className={`nav-menu ${showActiveClass()}`}>
             <li className="nav-item">
               <a href="#about" className="nav-link">About</a>
             </li>
@@ -23,7 +32,8 @@ function Header() {
             </li>
           </ul>
           
-          <div className="hamburger">
+          {/*<div onClick={onHamburger} className="hamburger {isActive ? 'active' ? ''}">*/}
+          <div onClick={onHamburger} className={`hamburger ${showActiveClass()}`}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
