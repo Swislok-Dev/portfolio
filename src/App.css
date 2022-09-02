@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
 html {
     color: white;
     background-color: black;
@@ -12,7 +18,7 @@ section {
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
 }
 
 section:nth-child(2) {
@@ -20,7 +26,8 @@ section:nth-child(2) {
 }
 
 section .content {
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-top: 50px;
     width: 80%;
 }
 
@@ -75,7 +82,7 @@ header {
 
 .nav-menu {
     display: flex;
-    justfiy-content: space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
 }
@@ -126,8 +133,8 @@ header {
 
     .nav-menu {
         position: fixed;
-        right: -110%;
-        top: 35px;
+        right: -100%;
+        top: 50px;
         gap: 0;
         flex-direction: column;
         background-color: #262626;
