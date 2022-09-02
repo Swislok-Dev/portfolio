@@ -17,7 +17,7 @@ function Header() {
   }
   
   return (
-      <header className="border">
+      <header className="header">
         <nav className="navbar">
           <a href="#cory" className="nav-branding">Cory</a>
           

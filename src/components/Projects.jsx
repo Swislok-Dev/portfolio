@@ -1,8 +1,8 @@
 
 export default function Projects() {
   return (
-      <section className="border">
-        <div className="content projects">
+      <section className="projects">
+        <div className="content">
           <h2>Projects</h2>
           <p>
             My projects will go here should be a scroll to get to them
