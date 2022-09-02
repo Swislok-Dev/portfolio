@@ -4,7 +4,7 @@ function Header() {
   
   const [isActive, setIsActive] = useState(false)
   
-  const onHamburger = () => {
+  const onHamburgerActive = () => {
     setIsActive(current => !current)
   }
   
@@ -12,12 +12,16 @@ function Header() {
     return isActive ? "active" : null
   }
   
+  const removeHamburgerActive = () => {
+    setIsActive(false)
+  }
+  
   return (
       <header className="border">
         <nav className="navbar">
           <a href="#cory" className="nav-branding">Cory</a>
           
-          <ul className={`nav-menu ${showActiveClass()}`}>
+          <ul onClick={removeHamburgerActive} className={`nav-menu ${showActiveClass()}`}>
             <li className="nav-item">
               <a href="#about" className="nav-link">About</a>
             </li>
@@ -33,7 +37,7 @@ function Header() {
           </ul>
           
           {/*<div onClick={onHamburger} className="hamburger {isActive ? 'active' ? ''}">*/}
-          <div onClick={onHamburger} className={`hamburger ${showActiveClass()}`}>
+          <div onClick={onHamburgerActive} className={`hamburger ${showActiveClass()}`}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
