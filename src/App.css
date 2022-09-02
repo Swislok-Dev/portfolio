@@ -1,8 +1,154 @@
 html {
     color: white;
     background-color: black;
+    box-sizing: border-box;
 }
 
 .border {
     border: 1px solid white;
 }
+
+section {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    /*margin: 0 auto;*/
+}
+
+section:nth-child(2) {
+    background-color: blue;
+}
+
+section .content {
+    border: 1px solid white;
+    margin: 50px auto;
+    width: 80%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+img {
+    width: 90%;
+    max-width: 900px;
+}
+
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header */
+
+
+header {
+    width: 100%;
+    background-color: darkslategrey;
+    position: fixed;
+}
+
+.navbar {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+.nav-menu {
+    display: flex;
+    justfiy-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: tomato;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 550px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg)
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg)
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 70%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+}
+
+/* Page Hero */
+
+
+/* Projects */
+
+
