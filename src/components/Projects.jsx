@@ -1,7 +1,6 @@
 export default function Projects() {
   return (
     <section className="projects">
-      <h2 className="projects-heading">Projects</h2>
       <div className="content">
         <article class="project article">
           <h3>Flight Tracker</h3>
