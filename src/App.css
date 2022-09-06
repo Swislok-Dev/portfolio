@@ -12,8 +12,7 @@
 }
 
 html {
-    color: var(--flavor-text);
-    background-color: var(--links);
+    
     box-sizing: border-box;
 }
 
@@ -32,8 +31,14 @@ section {
     align-content: space-between;
 }
 
-section:nth-child(2) {
+section:nth-child(even) {
     background-color: var(--bg-accent);
+    color: #6c6c6c;
+}
+
+section:nth-child(odd) {
+    color: var(--flavor-text);
+    background-color: var(--links);
 }
 
 section .content {
@@ -188,9 +193,6 @@ header {
 
 /* Page Hero */
 
-.page-hero {
-    color: #6c6c6c
-}
 
 @media screen and (max-width: 550px) {
     .page-hero {
