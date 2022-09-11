@@ -298,7 +298,7 @@ textarea.form-control::placeholder {
   left: 60%;
 }
 
-.submit {
+button.submit {
   background-color: var(--bg-1);
   color: var(--links);
   border: none;
