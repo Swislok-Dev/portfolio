@@ -252,10 +252,14 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: space-between;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 50px;
+}
+
+.skill-item:hover {
+  box-shadow: 0 0 35px   var(--flavor-text);
 }
 
 .skills h2 {
