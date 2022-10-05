@@ -2,7 +2,7 @@ import React from "react"
 
 function ContactMe() {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <h2>Contact</h2>
       <form
         action="https://formsubmit.co/cfd14fcd11cb6dae8de22321c87a3d4a"

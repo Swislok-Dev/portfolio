@@ -25,7 +25,7 @@ export default function Projects() {
   const adphotoImage = require("../assets/photos/adphotography.jpeg")
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="content">
         <Project
           title="Flight Tracker"

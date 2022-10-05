@@ -3,7 +3,7 @@ import SkillItem from "./skill/SkillItem"
 
 function Skills() {
   return (
-    <section className="skills">
+    <section id="skills" className="skills">
       <h2>What I can do</h2>
       <ul className='skills-list'>
       <SkillItem skillName="JavaScript"/>
