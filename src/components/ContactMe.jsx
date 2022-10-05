@@ -42,8 +42,8 @@ function ContactMe() {
         <input
           type="hidden"
           name="_next"
-          // value="https://corymarker.com/"
-          value="http://localhost:3000"
+          value="https://corymarker.com/"
+          // value="http://localhost:3000"
         />
         <input type="hidden" name="_subject" value="Portfolio Reply" />
         <input type="hidden" name="_template" value="table" />
