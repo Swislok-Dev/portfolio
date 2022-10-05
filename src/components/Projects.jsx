@@ -2,7 +2,7 @@ export default function Projects() {
   return (
     <section className="projects">
       <div className="content">
-        <article class="project article">
+        <article className="project article">
           <h3>Flight Tracker</h3>
           <h4 className="project-description">
             Airline flight tracker to view current status of an upcoming flight
@@ -16,7 +16,7 @@ export default function Projects() {
           <img
             src={require("../assets/photos/flight-tracker-image.png")}
             alt="Flight Tracker Landing page"
-            class="project-image"
+            className="project-image"
           />
         </article>
         <article className="project article">
