@@ -151,7 +151,7 @@ header {
   border-radius: 3px;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 680px) {
   .hamburger {
     display: block;
   }
@@ -191,7 +191,7 @@ header {
 
 /* Page Hero */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 680px) {
   .page-hero {
     text-align: center;
   }
