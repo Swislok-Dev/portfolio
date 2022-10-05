@@ -19,11 +19,11 @@ function Header() {
   return (
       <header className="header">
         <nav className="navbar">
-          <a href="#cory" className="nav-branding">Cory</a>
+          <a href="/" className="nav-branding">Cory Marker</a>
           
           <ul onClick={removeHamburgerActive} className={`nav-menu ${showActiveClass()}`}>
             <li className="nav-item">
-              <a href="#about" className="nav-link">About</a>
+              <a href={require("../assets/photos/Cory Marker Resume.pdf")} className="nav-link">Resume</a>
             </li>
             <li className="nav-item">
               <a href="#projects" className="nav-link">Projects</a>
@@ -36,7 +36,6 @@ function Header() {
             </li>
           </ul>
           
-          {/*<div onClick={onHamburger} className="hamburger {isActive ? 'active' ? ''}">*/}
           <div onClick={onHamburgerActive} className={`hamburger ${showActiveClass()}`}>
             <span className="bar"></span>
             <span className="bar"></span>
