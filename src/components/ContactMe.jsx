@@ -33,7 +33,7 @@ function ContactMe() {
           required
         ></textarea>
 
-        <button type="submit" className="submit form-control">
+        <button type="submit" className="btn submit-btn form-control">
           Send Message
         </button>
 
