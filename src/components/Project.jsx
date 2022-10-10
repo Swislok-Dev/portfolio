@@ -13,7 +13,9 @@ const Project = (props) => {
           <li key={`${item}${index}`}>{item}</li>
         ))}
       </ul>
-      <img src={image} alt={title} className="project-image" />
+      <figure>
+        <img src={image} alt={title} className="project-image" />
+      </figure>
     </article>
   )
 }

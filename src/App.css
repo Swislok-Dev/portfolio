@@ -41,9 +41,8 @@ section:nth-child(odd) {
 }
 
 section .content {
-  margin: 0 auto;
+  margin: 0 50px;
   padding-top: 50px;
-  width: 80%;
 }
 
 h1 {
@@ -98,6 +97,10 @@ a {
 
 .article-list li {
   line-height: 2em;
+}
+
+figure {
+  text-align: center;
 }
 
 /* Header */
@@ -215,7 +218,7 @@ header {
 }
 
 .project-image {
-  margin: 100px auto 50px;
+  margin: 50px 0;
   width: 90%;
   max-width: 900px;
   border-radius: 5px;
