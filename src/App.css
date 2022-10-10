@@ -231,18 +231,6 @@ header {
 
 /* Skills */
 
-.skill-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  font-weight: 500;
-  font-size: 24px;
-  background-color: var(--links);
-  color: var(--flavor-text);
-}
-
 .skills {
   min-height: fit-content;
 }
@@ -258,12 +246,27 @@ header {
   margin-bottom: 50px;
 }
 
-.skill-item:hover {
-  box-shadow: 0 0 35px   var(--flavor-text);
-}
-
 .skills h2 {
   margin: 50px;
+}
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-weight: 500;
+  font-size: 24px;
+  background-color: var(--links);
+  color: var(--flavor-text);
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.skill-item:hover {
+  box-shadow: 0 10px 10px 5px #8d8d8d;
+  top: -10px;
 }
 
 /* Contact Section */
