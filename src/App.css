@@ -89,7 +89,7 @@ figure {
 .article {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-height: fit-content;
   margin: 30px 10px;
 }
 
@@ -233,6 +233,18 @@ header {
 }
 
 .project {
+  background-color: #484848;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 40px auto;
+  transition: 0.5s ease;
+}
+
+.project:hover {
+  box-shadow: 0 0 10px 5px var(--flavor-text);
+}
+
+.project {
   align-items: start;
 }
 
@@ -263,6 +275,7 @@ header {
   align-self: center;
   justify-content: space-between;
   gap: 40px;
+  margin-bottom: 20px;
 }
 
 .project-links .btn {
