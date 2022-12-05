@@ -238,14 +238,13 @@ header {
   padding: 15px;
   margin: 40px auto;
   transition: 0.5s ease;
+  align-items: start;
+  overflow: hidden;
+  width: 90%;
 }
 
 .project:hover {
   box-shadow: 0 0 10px 5px var(--flavor-text);
-}
-
-.project {
-  align-items: start;
 }
 
 .project-description {
