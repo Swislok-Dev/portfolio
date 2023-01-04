@@ -18,11 +18,11 @@ const Project = (props) => {
       </figure>
       <div className="project-links">
         <a href={githubLink} target="_blank" rel="noreferrer">
-          <button className="btn">Source</button>
+          <button className="btn source-btn">Source</button>
         </a>
 
         <a href={liveLink} target="_blank" rel="noreferrer">
-          <button className="btn">Live Site</button>
+          <button className="btn live-btn">Live Site</button>
         </a>
       </div>
     </article>

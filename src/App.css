@@ -104,13 +104,22 @@ figure {
 }
 
 .btn {
-  background-color: var(--bg-1);
-  color: var(--links);
-  border: none;
+  background-color: transparent;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
   border-radius: 10px;
+  border: 2px solid #a2d9fd;
+  transition: 0.5s ease-in-out;
+}
+
+.live-btn {
+  background-color: #a2d9fd;
+  color: rgb(27, 38, 48);
+}
+
+.source-btn {
+  color: #a2d9fd;
 }
 
 .btn:focus {
@@ -118,9 +127,18 @@ figure {
 }
 
 .btn:hover {
-  background-color: var(--bg-accent);
   cursor: pointer;
-  border: none;
+  box-shadow: 0 0 10px;
+}
+
+.live-btn:hover {
+  background-color: transparent;
+  color: #a2d9fd;
+}
+
+.source-btn:hover {
+  background-color: #a2d9fd;
+  color: rgb(27, 38, 48);
 }
 
 .btn:active {
