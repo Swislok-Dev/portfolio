@@ -9,7 +9,7 @@ export default function Projects() {
   ];
   const flightTrackerDescription =
     'Airline flight tracker to view current status of an upcoming flight';
-  const flightTrackerImage = require('../assets/photos/airline-tracker-image.jpeg');
+  const flightTrackerImage = require('../assets/photos/airline-tracker-image(1).jpeg');
   const flightTrackerGithubURL =
     'https://github.com/Swislok-Dev/airline_tracker';
   const flightTrackerLiveURL = 'https://airline-tracker.vercel.app/';
