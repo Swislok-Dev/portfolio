@@ -152,8 +152,9 @@ figure {
 header {
   z-index: 1;
   width: 100%;
-  background-color: var(--background);
+  background-color: rgb(24 24 24 / .8);
   position: fixed;
+  backdrop-filter: blur(5px);
 }
 
 .navbar {
